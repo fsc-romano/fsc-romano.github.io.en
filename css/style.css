@@ -165,21 +165,6 @@ hr:after {
   background: var(--color-primary);
 }
 
-@media (min-width: 992px) {
-   {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-  }
-  .navbar-brand {
-    font-size: 1.75em;
-    transition: font-size 0.3s;
-  }
-  .navbar-nav {
-    margin-top: 0;
-  }
-}
-
 /* 
  * page-section, text-section
  */
@@ -190,13 +175,6 @@ hr:after {
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
-}
-
-@media (min-width: 992px) {
-  .page-section .page-section-heading {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
 }
 
 .text-section {
@@ -232,19 +210,6 @@ hr:after {
   width: 13rem;
 }
 
-@media (min-width: 992px) {
-  .header {
-    padding: 6rem 0 1rem 0;
-  }
-  .header .header-heading {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
-  .header .header-subheading {
-    font-size: 1.5rem;
-  }
-}
-
 /* 
  * Portfolio
  */
@@ -271,11 +236,6 @@ hr:after {
   font-size: 1.2rem;
 }
 
-@media (min-width: 992px) {
-  .portfolio .portfolio-item .portfolio-item-caption {
-  font-size: 1rem;
-}
-
 /* 
  * footer
  */
@@ -283,10 +243,6 @@ hr:after {
   padding-top: 1rem;
   background-color: var(--color-light);
   color: var(--color-light-contrast);
-}
-
-.copyright {
-  background-color: var(--color-black);
 }
 
 .btn-social {
@@ -310,6 +266,10 @@ hr:after {
 
 .btn-social:hover .fa-github, .btn-social:hover .fa-codepen {
   color: #000000 !important;
+}
+
+.copyright {
+  background-color: var(--color-black);
 }
 
 /* 
@@ -342,4 +302,42 @@ hr:after {
   -moz-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+
+/* media querie
+ *
+ */
+ @media (min-width: 992px) {
+   {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+  }
+  .navbar-brand {
+    font-size: 1.75em;
+    transition: font-size 0.3s;
+  }
+  .navbar-nav {
+    margin-top: 0;
+  }
+
+  .header {
+    padding: 6rem 0 1rem 0;
+  }
+  .header .header-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+  .header .header-subheading {
+    font-size: 1.5rem;
+  }
+
+  .page-section .page-section-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+
+  .portfolio .portfolio-item .portfolio-item-caption {
+    font-size: 1rem;
+  }
 }
